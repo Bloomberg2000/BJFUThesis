@@ -499,10 +499,14 @@
 %图表的格式
 
 \captionsetup[subfigure]{labelformat=parens}
-\captionsetup[table]{labelsep=space,font = {footnotesize,bf},labelfont=bf,textfont=bf}
-\captionsetup[figure]{labelsep=space,font = {footnotesize,bf},labelfont=bf,textfont=bf}
+\captionsetup[table]{labelsep=space,font = {footnotesize,bf,stretch=1.25},labelfont=bf,textfont=bf}
+\captionsetup[figure]{labelsep=space,font = {footnotesize,bf,stretch=1.25},labelfont=bf,textfont=bf}
 \captionsetup[figure][bi-second]{name=Figure} %设置图的英文编号前缀
 \captionsetup[table][bi-second]{name=Table} %设置表的英文编号前缀
+
+\setlength{\abovecaptionskip}{0pt}
+\setlength{\belowcaptionskip}{0pt}
+
 
 %带圈数字 
 \newcommand{\whiteding}[1]{\ding{\numexpr171+#1\relax}}
